@@ -6,5 +6,3 @@ Feature: Enrollment actions
     Given "...." is on the "....." page
     When user creates new user
     Then The user should be displayed
-    When admin deletes the user
-    Then The user should be deleted

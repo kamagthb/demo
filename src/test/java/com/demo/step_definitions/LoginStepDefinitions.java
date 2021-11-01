@@ -4,11 +4,12 @@ import com.demo.steps.LoginSteps;
 import io.cucumber.java.en.*;
 
 public class LoginStepDefinitions {
+
     LoginSteps loginSteps;
 
     @When("user logs in with {word} and {word} credentials")
     public void user_logs_in_with_and_credentials(String username, String password) {
-        loginSteps.loginWithCredentials(username,password);
+        loginSteps.loginWithCredentials(username, password);
     }
 
     @Given("{string} logs in to the platform")
@@ -21,6 +22,7 @@ public class LoginStepDefinitions {
     public void page_should_be_displayed(String page) {
         loginSteps.actorEnsuresThatPageIsDisplayed(page);
     }
+
     @Given("user is on the login page")
     public void userIsOnTheLoginPage() {
         loginSteps.openLoginPage();
@@ -28,7 +30,7 @@ public class LoginStepDefinitions {
 
     @Then("user logs in with {string} and {string}")
     public void userLogsInWithAnd(String email, String password) {
-        loginSteps.loginWithCredentials(email,password);
+        loginSteps.loginWithCredentials(email, password);
     }
 
     @When("{string} logs in")

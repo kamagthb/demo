@@ -5,6 +5,7 @@ import com.demo.utils.ConfigurationReader;
 import net.thucydides.core.annotations.Step;
 
 public class LoginSteps  {
+
     LoginPage loginPage;
 
     @Step("#actor is on the login page")

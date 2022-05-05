@@ -11,4 +11,4 @@ Feature: This is a test feature
       | instructor | Courses   |
       | moderator  | Courses   |
       | admin      | Programs  |
-      | superadmin | Programs  |
+     
